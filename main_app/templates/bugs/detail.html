@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{ bug.name }}</h1>
+
+
+<div class="card">
+    <div class="card-content">
+        <p>Scientific Name:<i> {{ bug.scientific }}</i></p>
+        <p>Description: {{ bug.description }}</p>
+        <p>Location: {{ bug.location }}</p>
+    </div>
+</div>
+
+
+{% endblock %}

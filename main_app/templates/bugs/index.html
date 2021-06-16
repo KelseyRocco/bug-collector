@@ -5,12 +5,11 @@
 
 {% for bug in bugs %}
 <div class="card">
-<div class="card-content">
-    <span class="card-title">{{ bug.name }}</span>
-    <p>Scientific Name:<i> {{ bug.scientific }}</i></p>
-    <p>Description: {{ bug.description }}</p>
-    <p>Location: {{ bug.location }}</p>
-</div>
+    <a href="{% url 'detail' bug.id %}">
+        <div class="card-content">
+            <span class="card-title">{{ bug.name }}</span>
+        </div>
+    </a>
 </div>
 {% endfor %}
 
